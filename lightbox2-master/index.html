@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Lightbox</title>
+  <link href="dist/css/lightbox.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1>New Accessories from Anthropologie</h1>
+
+  <h2>Filters</h2>
+  <div class = "controls">
+    <button type = "button" class = "control mixitup-control-active" data-filter= "all">All</button>
+    <button type = "button" class= "control" data-filter=".purse">Purse</button>
+    <button type = "button" class= "control" data-filter=".jewelry">Jewelry</button>
+    <button type = "button" class= "control" data-filter=".shoes">Shoes</button>
+    <button type = "button" class= "control" data-filter=".other">Other</button>
+  </div>
+
+  <section>
+    <div class = "container">
+      <a class="example-image-link mix jewelry" href="images/image1.jpg" data-lightbox="image-1"><img class="example-image" src="images/image1.jpg" alt="Gold Hoop Earrings" /></a>
+      <a class="example-image-link mix purse" href="images/image2.jpg" data-lightbox="image-2"><img class="example-image" src="images/image2.jpg" alt="Tote Bag" /></a>
+      <a class="example-image-link mix other" href="images/image3.jpg" data-lightbox="image-3"><img class="example-image" src="images/image3.jpg" alt="Fuzzy Mittens" /></a>
+      <a class="example-image-link mix shoes" href="images/image4.jpg" data-lightbox="image-4"><img class="example-image" src="images/image4.jpg" alt="Velvet Shoes" /></a>
+      <a class="example-image-link mix shoes" href="images/image5.jpg" data-lightbox="image-5"><img class="example-image" src="images/image5.jpg" alt="Pair of heels" /></a>
+      <a class="example-image-link mix purse" href="images/image6.jpg" data-lightbox="image-6"><img class="example-image" src="images/image6.jpg" alt="Embroidered Purse" /></a>
+      <a class="example-image-link mix jewelry" href="images/image7.jpg" data-lightbox="image-7"><img class="example-image" src="images/image7.jpg" alt="Letter Necklace" /></a>
+      <a class="example-image-link mix jewelry" href="images/image8.jpg" data-lightbox="image-8"><img class="example-image" src="images/image8.jpg" alt="Charm Bracelet" /></a>
+      <a class="example-image-link mix other" href="images/image9.jpg" data-lightbox="image-9"><img class="example-image" src="images/image9.jpg" alt="Keychain" /></a>
+    </div>
+  </section>
+
+  <section>
+    <p>
+      To see more accessories, visit Anthropologie's <a href="https://www.anthropologie.com/new-shoes-accessories">website</a>
+    </p>
+  </section>
+
+  <script src="dist/js/lightbox-plus-jquery.js"></script>
+  <script src="dist/js/mixitup.min.js"></script>
+  <script>
+    var containerEl = document.querySelector('.container');
+    var mixer = mixitup(containerEl);
+  </script>
+
+
+</body>
+</html>
